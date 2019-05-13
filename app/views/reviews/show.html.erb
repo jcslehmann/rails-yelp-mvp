@@ -1,2 +1,8 @@
 <h1>Review for <%= @review.restaurant.name %>:</h1>
 <p><%= @review.content %></p>
+<% @review.rating.times do |time| %>
+    <i class="fas fa-star"></i>
+  <% end %>
+  <% (5 - @review.rating).times do |time| %>
+    <i class="far fa-star"></i>
+  <% end %>
