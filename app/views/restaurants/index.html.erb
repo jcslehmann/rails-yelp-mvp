@@ -1,7 +1,7 @@
 <h1> Restaurants </h1>
 
-<table>
-  <thead>
+<table class="table">
+  <thead class="thead-light">
     <tr>
       <th>Name</th>
       <th>Address</th>
@@ -16,10 +16,10 @@
       <td> <%= restaurant.name %> </td>
        <td> <%= restaurant.address %> </td>
       <td>  <%= restaurant.category %> </td>
-      <td><%= link_to 'Show', restaurant %></td>
+      <td><%= link_to 'Show', restaurant, class: "btn btn-primary mb-5 px-4 py-3" %></td>
     </tr>
    <% end %>
   </tbody>
  </table>
 
-<%= link_to 'New Restaurant', new_restaurant_path %>
+<%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-primary" %>

@@ -13,6 +13,12 @@
   </head>
 
   <body>
+    <header class="bg-light mb-5 px-4 py-3 border-bottom d-flex sticky-top justify-content-between align-items-center">
+      <%= link_to "Restaurants", restaurants_path, class: 'm-0 text-muted h4 text-decoration-none' %>
+      <%= link_to "Create Restaurant", new_restaurant_path, class: 'btn btn-primary m-0' %>
+    </header>
     <%= yield %>
+    <footer class="bg-dark mt-5 p-5 text-center">
+      <p class="text-white m-0">Made in London @ Le Wagon</p>
   </body>
 </html>
